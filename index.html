@@ -1,11 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <!-- daisy ui and tailwind link -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css file link -->
+    <link rel="stylesheet" href="styles/style.css">
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="font-poppins" >
+    <main class=" bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center p-5">
+      <!-- home screen -->
+      <section class="home min-h-screen text-white flex justify-center items-center hidden">
+         <div class="flex flex-col items-center gap-12">
+          <h1 class="text-7xl text-center uppercase">Alpha Clash I</h1>
+          <p class="text-xl">Unleash your keyboard Kung Fu , press "Enter" to play</p>
+          <button class="btn">Play Now</button>
+         </div>
+      </section>
+      <!-- play ground -->
+      <section class="play-ground">
+        <div>
+          <!-- screen start -->
+          <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+           <div class="flex justify-center">
+              <p class="bg-[#2F2941] text-white px-6 py-2 rounded-sm">Don't watch keyboard  while playing...</p>
+           </div>
+          </div>
+          <!-- screen ends -->
+          <!-- keyboard start -->
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">q</kbd>
+            <kbd class="kbd">w</kbd>
+            <kbd class="kbd">e</kbd>
+            <kbd class="kbd">r</kbd>
+            <kbd class="kbd">t</kbd>
+            <kbd class="kbd">y</kbd>
+            <kbd class="kbd">u</kbd>
+            <kbd class="kbd">i</kbd>
+            <kbd class="kbd">o</kbd>
+            <kbd class="kbd">p</kbd>
+          </div> 
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">a</kbd>
+            <kbd class="kbd">s</kbd>
+            <kbd class="kbd">d</kbd>
+            <kbd class="kbd">f</kbd>
+            <kbd class="kbd">g</kbd>
+            <kbd class="kbd">h</kbd>
+            <kbd class="kbd">j</kbd>
+            <kbd class="kbd">k</kbd>
+            <kbd class="kbd">l</kbd>
+          </div> 
+          <div class="flex justify-center gap-1 my-1 w-full">
+            <kbd class="kbd">z</kbd>
+            <kbd class="kbd">x</kbd>
+            <kbd class="kbd">c</kbd>
+            <kbd class="kbd">v</kbd>
+            <kbd class="kbd">b</kbd>
+            <kbd class="kbd">n</kbd>
+            <kbd class="kbd">m</kbd>
+            <kbd class="kbd">/</kbd>
+          </div>
+          <!-- keyboard ends -->
+        </div>
+        <!-- buttons -->
+        <div class="flex justify-between">
+          <button class="btn bg-purple-500 ">
+            <p class="text-white">Life</p>
+            <img src="images/heart.svg" alt="">
+            <span>1</span>
+          </button>
+          <button class="btn bg-purple-500 ">
+            <p class="text-white">Score</p>
+            <img src="images/monetization_on.svg" alt="">
+            <span>1</span>
+          </button>
+
+        </div>
+      </section>
+      <section class="score"></section>
+    </main>
+  </body>
 </html>
